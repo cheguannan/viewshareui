@@ -158,6 +158,7 @@ const vsui = {
     DropdownMenu: Dropdown.Menu,
     Form,
     FormItem: Form.Item,
+    Icon,
     Input,
     Message,
     Modal,
