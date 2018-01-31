@@ -1,0 +1,36 @@
+@icon-prefix-cls: ~"@{css-prefix}icon";
+
+.content-header() {
+    padding: 0 18px;
+    height: @vs-modal-header-height;
+    line-height: @vs-modal-header-height;
+    border-top-left-radius: @vs-modal-border-radius;
+    border-top-right-radius: @vs-modal-border-radius;
+    .vs-modal-header-bg();
+
+    p,
+    &-inner
+    {
+        display: inline-block;
+        width: 100%;
+        font-size: @font-size-base;
+        color: @vs-modal-header-color;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.content-close(@top: 0, @icon-font-size: 22px) {
+    font-size: @font-size-small;
+    position: absolute;
+    right: 18px;
+    top: 1px;
+    overflow: hidden;
+    cursor: pointer;
+
+    .@{icon-prefix-cls}-ios-close-empty {
+        .close-base(@top, @icon-font-size);
+    }
+}

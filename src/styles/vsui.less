@@ -1,0 +1,190 @@
+// Input
+@vs-input-height--small           : 30px;
+@vs-input-height--default         : 34px;
+@vs-input-height--large           : 38px;
+
+@vs-input-font-size--small        : 14px;
+@vs-input-font-size--default      : 15px;
+@vs-input-font-size--large        : 16px;
+
+@vs-input-border-radius--small    : 14px;
+@vs-input-border-radius--default  : 16px;
+@vs-input-border-radius--large    : 20px;
+
+@vs-input-color--placeholder      : #d1c492;
+@vs-input-color--default          : #99601c;
+@vs-input-color--hover            : #d1c492;
+@vs-input-color--disabled         : #ccc;
+@vs-input-color--error            : rgb(255, 49, 49);;
+
+@vs-input-padding--small          : 0 14px;
+@vs-input-padding--default        : 0 16px;
+@vs-input-padding--large          : 0 18px;
+
+@vs-input-bg--default             : rgb(255, 241, 219);
+@vs-input-bg--hover               : rgb(255, 230, 193);
+@vs-input-bg--active              : rgb(255, 241, 219);
+@vs-input-bg--disabled            : #f3f3f3;
+@vs-input-bg--error               : rgb(255, 255, 255);
+
+@vs-input-shadow                  : 0px 2px 1px 0px rgba(255, 255, 255, 0.004),inset 0px 2px 1px 0px rgba(79, 72, 42, 0.23),inset 0px 0px 2px 0px rgba(79, 72, 42, 0.23);
+
+// Button
+@vs-button-color                   : #ffffff;
+
+@vs-button-font-size--small        : 14px;
+@vs-button-font-size--default      : 15px;
+@vs-button-font-size--large        : 16px;
+
+@vs-button-height--small           : 30px;
+@vs-button-height--default         : 34px;
+@vs-button-height--large           : 38px;
+
+@vs-button-border-radius--default  : 16px;
+@vs-button-border-radius--small    : 14px;
+@vs-button-border-radius--large    : 20px;
+
+@vs-button-padding--small          : 0 16px;
+@vs-button-padding--default        : 0 22px;
+@vs-button-padding--large          : 0 28px;
+
+.vs-button--default() {
+  background-image: linear-gradient( -90deg, rgb(124,224,150) 0%, rgb(22,153,80) 100%);
+  box-shadow: 0px 2px 1px 0px rgba(113,105,74,0.19), inset 0px -2px 1px 0px rgba(0,0,0,0.14), inset 0px 2px 1px 0px rgba(255,255,255,0.19);
+}
+.vs-button--hover() {
+  background-image: linear-gradient( -90deg, rgb(159,237,179) 0%, rgb(62,201,124) 100%);
+  box-shadow: 0px 2px 1px 0px rgba(113, 105, 74, 0.19),inset 0px -2px 1px 0px rgba(0, 0, 0, 0.14),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.19);
+}
+.vs-button--active() {
+  background-image: linear-gradient( -90deg, rgb(102,198,127) 0%, rgb(19,138,72) 100%);
+  box-shadow: 0px 2px 1px 0px rgba(113, 105, 74, 0.19),inset 0px -2px 1px 0px rgba(0, 0, 0, 0.14),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.19);
+}
+
+.vs-button-primary--default() {
+  background-image: none;
+  background-color: rgb(205, 139, 62);
+  box-shadow: 0px 2px 1px 0px rgba(113, 105, 74, 0.19),inset 0px -2px 1px 0px rgba(0, 0, 0, 0.14),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.19);
+}
+.vs-button-primary--hover() {
+  background-image: none;
+  opacity: .8;
+}
+.vs-button-primary--active() {
+  background-image: none;
+  opacity: 1;
+}
+
+.vs-button-ghost--default() {
+  background-image: none;
+  color: #269856;
+  border: 1px solid rgb(38, 152, 86);
+  background-color: rgba(0,0,0,0);
+  box-shadow: 0px 1px 2px 0px rgba(28, 113, 64, 0.65);
+}
+.vs-button-ghost--hover() {
+  background-image: none;
+  background-color: rgb(227, 255, 232);
+  box-shadow: 0px 1px 2px 0px rgba(28, 113, 64, 0.65);
+}
+.vs-button-ghost--active() {
+  background-image: none;
+  background-color: rgb(188, 255, 216);
+  box-shadow: 0px 1px 2px 0px rgba(28, 113, 64, 0.65);
+}
+
+.vs-button--disabled() {
+  color: #ffffff;
+  border: none;
+  opacity: .7;
+  background-image: linear-gradient( -90deg, rgb(189,189,189) 1%, rgb(130,130,130) 100%);
+  box-shadow: inset 0px -2px 1px 0px rgba(0, 0, 0, 0.2),inset 0px 2px 1px 0px rgba(255, 252, 238, 0.3);
+}
+
+// Datepicker
+@vs-datepicker-bg--hover         :#9BF5B2;
+@vs-datepicker-width             : 200px;
+@vs-datepicker-btn-color         : #ADADAD;
+
+// Input icon
+@vs-input-icon-font-size         : 18px;
+@vs-input-icon-width             : 40px;
+@vs-input-icon-height            : 40px;
+
+// Dropdown
+@vs-dropdown-bg                  : #ffffff;
+@vs-dropdown-bg--active          : #ffefcf;
+@vs-dropdown-color--default      : #99601c;
+@vs-dropdown-color--hover        : #e6a75d;
+@vs-dropdown-border-radius       : 10px;
+@vs-dropdown-height              : 30px;
+@vs-dropdown-shadow              : 0px 1px 6px 0px #bbbbbb;
+
+// Checkbox
+@vs-checkbox-border-radius         : 4px;
+@vs-checkbox-bg                    : rgba(0, 0, 0, 0);
+@vs-checkbox-border-color          : #1f9e55;
+@vs-checkbox-border-color--hover   : #3acc78;
+
+// Radio
+@vs-radio-border-radius             : 50%;
+@vs-radio-bg                        : rgba(0, 0, 0, 0);
+@vs-radio-border-color              : #1f9e55;
+@vs-radio-border-color--hover       : #3acc78;
+
+// Form
+@vs-form-font-size                 : 16px;
+@vs-form-color                     : #99601c;
+
+// Mask
+@vs-mask-bg                        : rgba(0,0,0,.8);
+
+// Modal
+@vs-modal-header-height             : 40px;
+@vs-modal-border-radius             : 10px;
+@vs-modal-header-color              : #ffffff;
+@vs-modal-body-bg                   : rgb(255, 251, 235);
+@vs-modal-body-color                : #99601c;
+@vs-modal-footer-align              : center;
+
+.vs-modal-header-bg() {
+  background-image: linear-gradient( -90deg, rgb(231,156,70) 1%, rgb(170,115,51) 100%);
+}                 
+.vs-modal-body-shadow(){
+  box-shadow: 0px 2px 9.5px 0.5px rgba(113, 105, 74, 0.19),inset 0px -2px 1px 0px rgba(0, 0, 0, 0.14);
+}
+
+// Close Icon
+@vs-close-color                     : #ffffff;
+@vs-close-color--hover              : #E5E5E5;
+
+// Select
+@vs-select-bg                       : #ffffff;
+@vs-select-border-color             : rgb(255, 167, 68);
+@vs-select-shadow                   : 0px 1px 3px 0px rgba(148, 140, 98, 0.72),inset 0px 2px 2px 0px rgba(0, 0, 0, 0.25),inset 0px -2px 0px 0px rgba(255, 255, 255, 0.28);
+
+@vs-select-padding--small           : 0 30px 0 14px;
+@vs-select-padding--default         : 0 30px 0 16px;
+@vs-select-padding--large           : 0 30px 0 18px;
+
+// Message
+.vs-message--success() {
+  color: #00672b;
+  background-color: #c8fdcf;
+  box-shadow: 0.521px 2.954px 8px 0px rgba(0, 0, 0, 0.17),inset 0px -2px 1px 0px rgba(59, 174, 74, 0.26),inset 0px 1px 1px 0px rgba(217, 255, 222, 0.004);
+}
+.vs-message--info() {
+  color: #0071db;
+  background-color: #b9e7ff;
+  box-shadow: 0.521px 2.954px 8px 0px rgba(0, 0, 0, 0.17),inset 0px -2px 1px 0px rgba(66, 166, 199, 0.27),inset 0px 1px 1px 0px rgba(185, 241, 255, 0.004);
+}
+.vs-message--warning() {
+  color: #fc5300;
+  background-color: #ffe3cc;
+  box-shadow: 0.521px 2.954px 8px 0px rgba(0, 0, 0, 0.17),inset 0px -2px 1px 0px rgba(255, 193, 142, 0.24),inset 0px 1px 1px 0px rgba(255, 245, 236, 0.89);
+}
+.vs-message--error() {
+  color: #fc0000;
+  background-color: #ffd1d1;
+  box-shadow: 0.521px 2.954px 8px 0px rgba(0, 0, 0, 0.17),inset 0px -2px 1px 0px rgba(255, 193, 142, 0.24),inset 0px 1px 1px 0px rgba(255, 245, 236, 0.89);
+}

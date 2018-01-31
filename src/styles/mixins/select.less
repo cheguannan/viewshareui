@@ -1,0 +1,73 @@
+.select-item(@size-class, @item-class) {
+    .@{item-class} {
+        margin: 0;
+        line-height: @vs-dropdown-height;
+        clear: both;
+        color: @vs-dropdown-color--default;
+        font-size: @font-size-small !important;
+        white-space: nowrap;
+        list-style: none;
+        cursor: pointer;
+        transition: background @transition-time @ease-in-out;
+        text-align: center;
+
+        &:hover{
+            color: @vs-dropdown-color--hover;
+        }
+
+        &:active{
+            background-color: @vs-dropdown-bg--active;
+        }
+
+        &-focus {
+            background-color: @vs-dropdown-bg--active;
+        }
+
+        &-disabled {
+            color: @btn-disable-color;
+            cursor: @cursor-disabled;
+
+            &:hover {
+                color: @btn-disable-color;
+                background-color: #fff;
+                cursor: @cursor-disabled;
+            }
+        }
+
+        &-selected ,&-selected:hover{
+            color: #fff;
+            background: @selected-color;
+        }
+
+        &-selected&-focus {
+            background: shade(@selected-color, 10%);
+        }
+
+        &-divided{
+            margin-top: 5px;
+            border-top: 1px solid @border-color-split;
+            &:before{
+                content: '';
+                height: 5px;
+                display: block;
+                margin: 0 -16px;
+                background-color: #fff;
+                position: relative;
+                top: -7px;
+            }
+        }
+    }
+
+    .@{size-class}-large .@{item-class} {
+        padding: 0 16px;
+        font-size: 12px !important;
+    }
+    // http://browserhacks.com/
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=488725
+    // fixed #1224 #1143 #1127
+    @-moz-document url-prefix() {
+        .@{item-class} {
+            white-space: normal;
+        }
+    }
+}
