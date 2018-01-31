@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div class="title">
-            VS-UI 
+            viewshareui
             <span class="sub-title">be the best</span>
         </div>
         <div class="item">
@@ -357,7 +357,7 @@
             height: 70px;
             line-height: 70px;
             padding-left: 50px;
-            font-size: 38px;
+            font-size: 40px;
             border-bottom: 1px solid #eee;
             color: #36a16f;
             background-color: #fff;
