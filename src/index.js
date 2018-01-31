@@ -209,7 +209,7 @@ const API = {
 //     else console.log(`The ${code} language pack is not loaded.`); // eslint-disable-line no-console
 // };
 
-// module.exports.default = module.exports = API;   // eslint-disable-line no-undef
+module.exports.default = module.exports = API;   // eslint-disable-line no-undef
 
 // 自定义代码
-export default API
+// export default API
